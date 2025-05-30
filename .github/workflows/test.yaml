@@ -1,0 +1,15 @@
+name: "ga-test"
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  ga-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Pull code"
+      - run: echo "Run migrations"
+      - run: echo "Generate binary"
+      - run: echo "Public version"
