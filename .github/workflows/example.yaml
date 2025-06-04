@@ -34,3 +34,10 @@ jobs:
 
       - name: Working dir after action
         run: ls -al
+
+  fourth-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: GitHub output
+        run: echo $GITHUB_OUTPUT
